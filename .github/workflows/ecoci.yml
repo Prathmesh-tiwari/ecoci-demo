@@ -158,7 +158,7 @@ jobs:
           ECOCI_URL: ${{ env.ECOCI_URL }}
 
       - name: Comment the decision on the pull request
-        if: always() && hashFiles('comment.md') != ''
+        if: always() && hashFiles('comment.md') != '' && github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |
