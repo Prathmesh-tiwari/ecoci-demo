@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+ecoci_report.json
+selected.txt
+decision.json
+pr.json
+changed.txt
+comment.md
+.coverage
+htmlcov/
